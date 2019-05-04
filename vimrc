@@ -23,6 +23,9 @@ set expandtab
 " highlight search
 set hlsearch
 
+"case-insensitive
+set ignorecase
+
 syntax enable
 "colorscheme sol
 set background=dark
@@ -43,11 +46,21 @@ highlight DiffText   cterm=none ctermfg=black ctermbg=Cyan gui=none guifg=bg gui
 "    colorscheme evening
 "endif
 
+highlight Search ctermbg=DarkGrey
+highlight Search ctermfg=black
+
+" show the matching part of the pair for [] {} and ()
+set showmatch
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
+
 "call plug#begin()
 "Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "call plug#end()
 
-autocmd VimEnter * if globpath('.,..','node_modules/@angular') != '' | call angular_cli#init() | endif
+"map <C-.> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <C-l> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+map <C-k> :sp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 "set cursor last postition
 if has("autocmd")
