@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/harish/everest/connect/etc/scripts'
+let g:netrw_dirhist_2='/home/harish/everest/connect/package/scripts'
+let g:netrw_dirhist_3='/home/harish/everest/connect/package'
+let g:netrw_dirhist_4='/home/harish/everest/connect'
+let g:netrw_dirhist_5='/home/harish/everest/connect/etc'
+let g:netrw_dirhist_6='/home/harish/everest/connect/etc/scripts'
