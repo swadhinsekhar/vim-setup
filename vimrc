@@ -57,6 +57,9 @@ let python_highlight_all = 1
 "call plug#begin()
 "Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "call plug#end()
+set rtp+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
 
 "map <C-.> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <C-l> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
